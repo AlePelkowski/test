@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Mean_OTU <= 100.08\nentropy = 0.856\nsamples = 796\nvalue = [573, 223]\nclass = Not Preterm"] ;
+1 [label="Mean_OTU <= 94.07\nentropy = 0.767\nsamples = 710\nvalue = [551, 159]\nclass = Not Preterm"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Mean_OTU <= 89.191\nentropy = 0.859\nsamples = 562\nvalue = [403, 159]\nclass = Not Preterm"] ;
+1 -> 2 ;
+3 [label="Mean_OTU <= 82.546\nentropy = 0.723\nsamples = 469\nvalue = [375, 94]\nclass = Not Preterm"] ;
+2 -> 3 ;
+4 [label="entropy = 0.917\nsamples = 283\nvalue = [189, 94]\nclass = Not Preterm"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 186\nvalue = [186, 0]\nclass = Not Preterm"] ;
+3 -> 5 ;
+6 [label="Mean_OTU <= 89.337\nentropy = 0.883\nsamples = 93\nvalue = [28, 65]\nclass = Preterm"] ;
+2 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 47\nvalue = [0, 47]\nclass = Preterm"] ;
+6 -> 7 ;
+8 [label="entropy = 0.966\nsamples = 46\nvalue = [28, 18]\nclass = Not Preterm"] ;
+6 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 148\nvalue = [148, 0]\nclass = Not Preterm"] ;
+1 -> 9 ;
+10 [label="Mean_OTU <= 102.265\nentropy = 0.82\nsamples = 86\nvalue = [22, 64]\nclass = Preterm"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="entropy = 0.0\nsamples = 32\nvalue = [0, 32]\nclass = Preterm"] ;
+10 -> 11 ;
+12 [label="Mean_OTU <= 104.608\nentropy = 0.975\nsamples = 54\nvalue = [22, 32]\nclass = Preterm"] ;
+10 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 22\nvalue = [22, 0]\nclass = Not Preterm"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 32\nvalue = [0, 32]\nclass = Preterm"] ;
+12 -> 14 ;
+}
